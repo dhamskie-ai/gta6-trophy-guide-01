@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; OFFLINE GUIDE</p>
+    <h1>Leonida Platinum</h1>
+    <p class="sub">Every one of the 55 official trophies — name, description and grade as PlayStation publishes them — with a guide in our own words, a cited source beside each one, a roadmap to the platinum, and a tracker that saves in your browser.</p>
+  </div>
+  <div class="stats" id="stats">
+    <div class="stat"><b>55</b><span>trophies</span></div>
+    <div class="stat"><b>1&middot;2&middot;6&middot;46</b><span>plat &middot; gold &middot; silver &middot; bronze</span></div>
+    <div class="stat"><b>28</b><span>hidden</span></div>
+    <div class="stat"><b>0</b><span>online</span></div>
+    <div class="stat"><b>~200h</b><span>platinum, PowerPyx 4/10</span></div>
+  </div>
+</header>
+
+<section class="progress-wrap" aria-label="Progress">
+  <div class="progress-line"><span id="progressText">0 of 55 earned — 0% to platinum</span><span id="gradeText"></span></div>
+  <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+</section>
+
+<div class="warn" id="missableWarn"><b>&#9888; ONE POSSIBLY MISSABLE TROPHY:</b> <b>Positive Mental Attitude</b> — meditate at every spot across Leonida. Do Lucia&rsquo;s Chapter 1 balcony meditation before Chapter 1 ends; GTABase and PowerPyx report it may disappear. Keep a manual save at the start of every chapter. There is no mission replay.</div>
+
+<nav class="toolbar" aria-label="Filters">
+  <input id="search" type="search" placeholder="Search a trophy, mission or activity&hellip;" aria-label="Search trophies">
+  <div class="kinds" id="kinds" role="group" aria-label="Kind filter">
+    <button type="button" data-kind="all" class="on">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label class="check"><input type="checkbox" id="spoiler"> Spoiler-safe: hide story trophies until earned</label>
+  <label class="check"><input type="checkbox" id="hideEarned"> Hide earned</label>
+  <button type="button" id="exportBtn">Export progress</button>
+  <label class="import">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button type="button" id="resetBtn">Reset</button>
+</nav>
+
+<section class="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum — 6 stages, in order</h2>
+  <ol class="stages" id="roadmap"></ol>
+  <p class="roadmap-note">Built from the official descriptions only. Story first (Chapter 1 meditation!), then side characters, activities, crime, collectibles — and the 100% checklist last. Cheats disable trophies and saving (GTABase, TechWiser), so keep them off for the whole run.</p>
+</section>
+
+<main class="grid">
+  <section class="list-col">
+    <h2 id="listHeading">Checklist — 55 trophies</h2>
+    <p class="hint">Tick a trophy when it pops. Click any row to open its guide, steps and sources on the right. Counters save with your progress.</p>
+    <ul class="trophies" id="trophyList"></ul>
+    <p class="empty" id="emptyMsg" hidden>No trophies match these filters.</p>
+  </section>
+  <aside class="detail" id="detail" aria-label="Trophy guide"></aside>
+</main>
+
+<footer>
+  <p><b>Sources, named beside every guide:</b> the official list on Exophase and PSNProfiles (names, descriptions, grades, hidden flags, PSN counts); PowerPyx trophy, 100% and challenges guides; GTABase trophies and gang-operation guides; EGamers.io trophy and 100% guides; GamesFuze and GTA Spotter collectibles guides. Guides are original writing for this entry — sources are cited, never copied. Where a step is unconfirmed at launch (19 Nov 2026), the guide says so.</p>
+  <p>All 55 trophies are single-player and offline. No Rockstar logo, artwork or game screenshots are used here; the look is our own. Works offline: this app fetches only its own data file and saves progress in localStorage.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
